@@ -1,5 +1,7 @@
 ### Goodcab Ad-Hoc Analysis
 
+[Presentation Link](https://www.linkedin.com/feed/update/urn:li:activity:7316462338805485591/)
+
 
 ### About Company -
 
