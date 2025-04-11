@@ -1,10 +1,14 @@
 ### Goodcab Ad-Hoc Analysis
 
 
-### About Company - 
+### About Company -
+
  Established: 2 years ago
+ 
  Type: Cab service company
+ 
  Focus Area: Tier-2 cities across India
+ 
  Mission:
 - Empower local drivers to earn a sustainable livelihood
 - Provide excellent service to passengers
@@ -14,6 +18,7 @@ Unique Approach: Unlike other cab companies, Goodcabs focuses on supporting driv
 Current Operations: Goodcabs operates in 10 Tier-2 cities:  Jaipur, Lucknow, Surat, Kochi, Indore, Chandigarh, Vadodara, Visakhapatnam, Coimbatore, Mysore
 
 Vision for 2024:
+
 - Set ambitious performance targets
 - Aim to expand reach, enhance service quality, and boost passenger satisfaction
 
@@ -29,10 +34,15 @@ The objectives of this analysis are:
 ### Business Requirements -
 
 Business Request – 1 : City-Level Fare and Trip Summary Report.
+
 Business Request –2: Monthly City-Level Trips Target Performance Report.
+
 Business Request –3: City-Level Repeat Passenger Trip Frequency Report.
+
 Business Request –4: Identify Cities with Highest and Lowest Total New Passengers.
+
 Business Request –5: Identify Month With Highest Revenue for Each City.
+
 Business Request –6: Repeat Passenger Rate Analysis.
 
 ### Data Sources -
@@ -44,13 +54,16 @@ It organizes trip data by city, month, and day type (weekday or weekend), enabli
 
 
 1. dim_city
+   
 Purpose: This table provides city-specific details, enabling location-based analysis of trips and passenger behavior across Goodcabs’ operational areas.
+
 - city_id: A unique identifier for each city, using a standardized code (e.g., RJ01 for Jaipur).
 - city_name: The name of the city where Goodcabs operates (e.g., Jaipur, Lucknow), used for location-based grouping and insights.
 
 
 
 2. dim_date
+
 Purpose: This table provides date-specific details that enable time-based grouping and analysis, helping to identify patterns across days, months, and weekends versus weekdays.
 
 - date: The specific date for each entry (formatted as YYYY-MM-DD), used for daily-level analysis and to join with trip data.
@@ -61,6 +74,7 @@ Purpose: This table provides date-specific details that enable time-based groupi
 
 
 3. fact_passenger_summary (Aggregated Data)
+
 Purpose: This table provides an aggregated summary of passenger counts for each city by month.
  It includes data on total passengers, new passengers, and repeat passengers, giving a high-level overview of passenger distribution patterns across different locations and times.
 
@@ -73,6 +87,7 @@ Purpose: This table provides an aggregated summary of passenger counts for each 
 
 
 4. dim_repeat_trip_distribution (Aggregated Data)
+
 Purpose: This table provides a breakdown of repeat trip behavior, aggregated by month and city. It details how many times repeat passengers rode
 within the given month, categorized by trip frequency. To keep things simple and ensure uniformity across cities, we have included trip frequencies up
 to a maximum of 10 trips per month. This allows for an analysis of repeat trip patterns at a granular level.
@@ -85,6 +100,7 @@ to a maximum of 10 trips per month. This allows for an analysis of repeat trip p
 
 
 5. fact_trips
+   
 Purpose: This table provides detailed information on each individual trip, including trip-specific metrics like distance, fare, and ratings, which can be used for granular trip-level analysis.
 
 - trip_id: Unique identifier for each trip.
