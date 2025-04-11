@@ -136,6 +136,7 @@ and average passenger ratings. It enables performance evaluations against key be
 
 
 ### Tool Uesd -
+- Excel (Read & Understand for data)
 - MySQL (I used MySQL to perform Ad-Hoc analysis)
 - ChatGPT (I used ChatGPT whenever I faced any problems while writing queries or when I didn’t understand something)
 - PowerPoint (To create the presentation)
